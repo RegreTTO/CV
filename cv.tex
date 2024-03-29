@@ -1,0 +1,112 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage{setspace}
+
+\usepackage{lipsum}
+\usepackage[hidelinks]{hyperref}
+\usepackage{ulem}
+
+\usepackage{enumitem}
+\usepackage[%
+	paperheight=26cm,%
+	top=1in, %
+    left=0.5in,%
+    right=0.5in,%
+    bottom=2cm%
+]{geometry}%
+\usepackage{fontspec}
+\setmainfont{Helvetica}
+\thispagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\columnsep}{1cm}
+\hypersetup{
+    colorlinks=false,
+}
+% Commands
+\newcommand{\header}[1]{\textbf{\addfontfeature{LetterSpace=10pt}\large #1}\vspace{0pt} \par}
+
+\begin{document}
+\begin{center}
+\addfontfeature{LetterSpace=15pt}
+\textbf{\Large Моисеев Денис } \par
+\medskip
+\textbf{\Large DevOps Engineer} \par
+\end{center}
+\begin{flushleft}
+Место регистрации: Москва\par
+\smallskip
+Дата рождения: 16.05.2005г
+\end{flushleft}
+\vspace{-10pt}
+\hrulefill \par
+\smallskip
+\begin{minipage}[t]{.60\textwidth}
+\begin{flushleft}
+\header{\uppercase{О себе}}
+\addfontfeature{LetterSpace=7pt}
+Имею знания во многоих сферах IT-индустрии. Писал проекты на различных языках программирования. Умею работать в команде и находить общий язык с людьми\par
+\end{flushleft}
+\end{minipage}
+\hspace{10mm}
+\vrule depth 96.2pt width .4pt
+\hfill
+% Contacts
+\begin{minipage}[t]{6cm}
+\begin{flushleft}
+\singlespace
+\textbf{E-mail:}\par
+\vspace{-1pt}
+\uline{\texttt{atary\_game@mail.ru}}\par
+\medskip
+\textbf{Telegram:} \par
+\vspace{-1pt}
+\uline{\url{https://t.me/RegereTTO}} \par
+\medskip
+\textbf{GitHub:}\par
+\vspace{-1pt}
+\uline{\url{https://github.com/RegreTTO}}\par
+\hrulefill
+\end{flushleft}
+\end{minipage}
+%
+\begin{flushleft}
+\header{\uppercase{Навыки}}
+\end{flushleft}
+\vspace{-10pt}
+\begin{center}
+\addfontfeature{LetterSpace=10pt}
+Английский язык B2 \textbullet\ C/C++ \textbullet\ Linux \textbullet\  Bash \textbullet\  Pyhon \textbullet\  Go \textbullet\  Java \textbullet\  SSH \textbullet\  FTP \textbullet\  NFS \textbullet\  OpenSSL \textbullet\  Nginx \textbullet\  Kubernetes \textbullet\  Docker \textbullet\  Docker-Compose \textbullet\  RabbitMQ \textbullet\  Kafka \textbullet\  MetalLB \textbullet\  Istio \textbullet\  Grafana \textbullet\  Prometheus \textbullet\  GitlabCI \textbullet\  Jenkins \textbullet\  Samba \textbullet\  gRPC \textbullet\  Ansible \textbullet\  Redis \textbullet\ PostgreSQL
+\end{center}
+\smallskip
+\begin{flushleft}
+\header{\uppercase{Опыт работы}}
+\medskip
+\uline{\textbf{DotFood} \textemdash\ сервис по подбору оптимального по цене товара магазина} \hfill \textbf{2021 \textendash 2022}\par
+\begin{itemize}[leftmargin=*, itemsep=-4pt, topsep=0pt]
+\item {Разрабатывал оптимальный алгоритм асинхронного парсинга веб-сайтов}
+\item {Руководил командой из 6 человек}
+\item {Настраивал Gitlab CI}
+\item {Проводил Code Review примерно 2-3 раза в неделю}
+\end{itemize}
+\medskip
+\uline{\textbf{Sound Scale} \textemdash\ стриминговый сервис прослушивания музыки } \hfill \textbf{2022 \textendash 2023}\par
+
+\begin{itemize}[leftmargin=*, itemsep=-4pt, topsep=0pt]
+\item {Реализовал авторизацию на Go с использованием OAuth2 и JWT}
+\item {Реализовал алгоритм стриминга музыки}
+\item {Написал скрипт, упрощающий компиляцию protobuf}
+\item {Развернул 13 микросервисов на bare-metal kubernetes кластере}
+\end{itemize}
+\uline{\url{https://gitlab.com/__Andy__/soundscale}}
+\end{flushleft}
+\bigskip
+\begin{flushleft}
+\header{\uppercase{Образование}}
+\vspace{4pt}
+\textbf{ЧУ ДО "Московская школа программистов" \hfill 2019 \textendash\ 2023}\
+\par\smallskip
+Там изучил: компьютерные сети, assembler, C++, C\#, паттерны проектирования, криптографию, стеганографию, reverse engineering, docker, технологии промышленного программирования, linux.\par
+\bigskip
+\textbf{РТУ МИРЭА\hfill 2023 \textendash\ 2027}\par
+\textbf{Информационные системы и технологии}
+\end{flushleft}
+\end{document}
